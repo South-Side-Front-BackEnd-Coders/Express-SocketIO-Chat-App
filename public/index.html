@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SSTS SocketIO Chat</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/logo192.png">
+</head>
+
+<body>
+    <header>
+        <logoHolder>
+            <svg height="70" width="200">
+                <defs>
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(0, 229, 255);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(0, 89, 255);stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <ellipse cx="65" cy="35" rx="60" ry="32" fill="url(#grad1)" />
+                <text fill="#ffffff" font-size="25" font-family="San serif" x="28" y="28">Dev</text>
+                <text fill="#ffffff" font-size="30" font-family="cursive" font-weight="600" x="38" y="55">Chat </text>              
+                Sorry, your browser does not support inline SVG.
+              </svg>
+        </logoHolder>
+    </header>
+    <main>
+        <form id="chat-form" action="chat.html">
+            <div id="join-chat-form">
+                <div id="user-name-wrapper">
+                    <input type="text" id="username" name="username" placeholder="Enter username.." required>
+                </div>
+                <nav>
+                    <h3>Chat Rooms</h3>
+                    <select id="room" name="room">
+                        <option value ="FrontEnd"> Front-End</option>
+                        <option id="BackEnd"> Back-End</option>
+                        <option id="DataManagement"> Data Management</option>
+                        <option id="System Architecture">System Architecture</option>
+                    </select>
+                </nav>
+                <div id="join-room-btn-wrapper">
+                    <button id="join-room-btn">Join Chat </button>
+                </div>
+            </div>
+        </form>
+
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>

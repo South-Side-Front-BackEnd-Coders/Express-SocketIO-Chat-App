@@ -1,0 +1,173 @@
+@media only screen and (max-width: 799px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header {
+    position: relative;
+    margin-top: 3vh;
+    height: 10vh;
+    width: 98vw;
+    border-radius: 5px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8a05), to(#bfae40));
+    background-image: linear-gradient(#ff8a05, #bfae40);
+  }
+  #ChatWindow {
+    height: 70vh;
+    width: 98vw;
+    background-color: #d87435;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ChatItem {
+    width: 99%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    border-radius: 5px;
+    margin-top: 2px;
+  }
+  .SenderMessage {
+    border: 1px blue solid;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .SenderMessage .ChatSender {
+    font-style: italic;
+    font-family: fantasy;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    background-color: #7ff9ff;
+  }
+  .SenderMessage .ChatMessage {
+    border-radius: 5px;
+    background-color: #7ff9ff;
+    border-top-left-radius: 0;
+  }
+  .MyMessage {
+    border: 1px blue solid;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .MyMessage .ChatSender {
+    font-style: italic;
+    font-family: fantasy;
+    border-radius: 5px;
+    background-color: aquamarine;
+    border-bottom-right-radius: 0;
+  }
+  .MyMessage .ChatMessage {
+    border-radius: 5px;
+    background-color: aquamarine;
+    border-top-right-radius: 0;
+  }
+  #ChatOptions {
+    border-radius: 5px;
+    margin-top: .5vh;
+    width: 98vw;
+    height: 10vh;
+    background-color: aquamarine;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #ChatOptions #messageContainer {
+    width: 75%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #ChatOptions #messageContainer #messageInput {
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 16px;
+    height: 80%;
+    width: 100%;
+  }
+  #ChatOptions #SendButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: #10035f 1px solid;
+    height: 80%;
+    width: 19%;
+    border-radius: 5px;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 20px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#0088ff), color-stop(#01f1fd), to(#0088ff));
+    background-image: linear-gradient(to Right, #0088ff, #01f1fd, #0088ff);
+  }
+}
+/*# sourceMappingURL=chat.css.map */

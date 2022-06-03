@@ -1,0 +1,29 @@
+{
+    "name": "express-socketio-chat-app",
+    "version": "1.0.0",
+    "description": "South SIde Tech Solutions Chat App",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server",
+        "dev": "nodemon server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/South-Side-Front-BackEnd-Coders/Express-SocketIO-Chat-App.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/South-Side-Front-BackEnd-Coders/Express-SocketIO-Chat-App/issues"
+    },
+    "homepage": "https://github.com/South-Side-Front-BackEnd-Coders/Express-SocketIO-Chat-App#readme",
+    "dependencies": {
+        "express": "^4.18.1",
+        "moment": "^2.29.3",
+        "socket.io": "^4.5.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.16"
+    }
+}

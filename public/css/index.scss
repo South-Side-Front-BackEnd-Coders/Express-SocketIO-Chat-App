@@ -1,0 +1,108 @@
+@media only screen and (max-width:799px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        background-color: black;
+    }
+    header {
+        position: relative;
+        margin-top: 3vh;
+        height: 10vh;
+        background-image: linear-gradient(rgb(255, 138, 5), rgb(191, 174, 64));
+    }
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        height: 80vh;
+        background-color: white;
+    }
+    form {
+        border-radius: 10px;
+        height: 50%;
+        width: 90%;
+    }
+    #join-chat-form {
+        background-color: rgb(57, 148, 239);
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 40% 20%;
+        grid-template-areas: "nav" "username" "joinRoomBtn";
+    }
+    nav {
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgb(0, 127, 255);
+        height: 100%;
+        width: 100%;
+        h3 {
+            height: 25%;
+            width: 50%;
+            color: rgb(255, 255, 255);
+            font-size: 1.6rem;
+        }
+        select {
+            margin-top: 2%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 35%;
+            width: 90%;
+            option {
+                min-width: 140px;
+                max-width: 150px;
+                height: 25px;
+                background-color: rgb(10, 34, 246);
+                border: none;
+                border-radius: 5px;
+                color: aliceblue;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+    #user-name-wrapper {
+        grid-area: username;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        input {
+            width: 90%;
+            height: 30%;
+            border-radius: 5px;
+        }
+    }
+    #join-room-btn-wrapper {
+        grid-area: joinRoomBtn;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        button {
+            width: 90%;
+            height: 70%;
+            background-color: rgb(162, 226, 246);
+            border-radius: 5px;
+        }
+    }
+    footer {
+        height: 7vh;
+        background-color: grey;
+    }
+}
