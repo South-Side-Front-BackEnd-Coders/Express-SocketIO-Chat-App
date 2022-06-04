@@ -1,10 +1,26 @@
 const chatForm = document.getElementById("chat-form");
 const chatView = document.getElementById("ChatWindow");
+//join chat
+function getUrlInfo() {
+    var data = window.location.search.substring(1).split("&");
+    // data = [ "param=value","param=value","param=value"]
+    var usernameArray = data[0].substring(0).split("=");
+    //Splits the first string element at the "=" symbol and return and array with the param and value 
+    //usernameArray = ["param","value"]
+    var username = usernameArray[1].replace("+", " ");
+    //Replaces the spaces, if any, in the second element, 
+    //which is the value of the param
+
+    var roomArray = data[1].substring(0).split("="); //Repeat steps for the second element
+    var room = roomArray[1].replace("+", " ");
+    return {
+        username,
+        room
+    }
+};
 
 //Get username and room from url using qs library
-const { username, room } = Qs.parse(location.search, {
-    ignoreQueryPrefix: true
-});
+const { username, room } = getUrlInfo();
 
 const socket = io();
 
